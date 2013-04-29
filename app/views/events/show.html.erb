@@ -1,0 +1,32 @@
+<div id= "right_box">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Age category:</b>
+  <%= @event.Age_Category %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @event.Time %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @event.Date %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @event.Location %>
+</p>
+
+<p>
+  <b>Opponent:</b>
+  <%= @event.Opponent %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
+</div>

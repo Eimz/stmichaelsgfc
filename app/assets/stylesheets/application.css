@@ -1,0 +1,101 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 0px;
+	background-image:url("bg_image.png");
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 12pt;	
+}
+.container
+{
+	width: 1000px;
+	margin: 0px auto;
+	-webkit-border-radius:2em; /* Safari */
+	-moz-border-radius:2em;
+	border-radius:2em;
+	position: relative;
+	background: #FFFFEE;
+}
+	
+.navbar {
+	width: 1000px;
+	height: 50px;
+	font-family: verdana;
+	font-size: 15px;
+	line-height: 48px;
+	font-weight: bold;
+	border-top-right-radius:2em;
+	-webkit-border-top-right-radius:2em;
+	-moz-border-top-right-radius:2em;
+	border-top-left-radius:2em;
+	-webkit-border-top-left-radius:2em;
+	-moz-border-top-left-radius:2em;
+	background: #FF0000;
+}
+.button a{
+	float: left;
+	width: 125px;
+	height: 50px;
+	color: #000;
+	text-decoration: none;
+	text-align: center;	
+}
+.button a:hover{
+	float: left;
+	width: 125px;
+	height: 50px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;	
+	background: #000;
+	-webkit-border-radius:2em; /* Safari */
+	-moz-border-radius:2em;
+	border-radius:2em;
+}
+#left_box {
+	font-weight: bold;
+	width: 200px;
+	background: #FF0000;
+	-webkit-border-radius:2em; /* Safari */
+	-moz-border-radius:2em;
+	border-radius:2em;
+	position: absolute;
+	left: 30px;
+	top: 342px;
+}
+
+#left_box h1  {
+	font-size: 25px;
+	color: #000000;	
+	text-align: center;
+	
+}
+#right_box {
+	font-weight: bold;
+	width: 700px;
+	background: #CCCCFF;
+	-webkit-border-radius:1em; /* Safari */
+	-moz-border-radius:1em;
+	border-radius:1em;
+	position: relative;
+	left: 270px;	
+}
+#right_box h1  {
+	font-size: 25px;
+	color: #000000
+;	
+	text-align: center;
+
+
+#right_box p {
+	font-size: 18px;
+	color: #000000;	
+	text-align: center;
+}
+

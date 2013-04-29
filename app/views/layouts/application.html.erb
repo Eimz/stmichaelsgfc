@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StMichaelsGFC</title>
+   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+   <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class= "container">
+    <header>
+    <div class="navbar">
+      <div class= "button"><a href= "http://localhost:3000/stmichaelsgfc">News</a></div>
+      <div class= "button"><a href= "http://localhost:3000/club_history">Club History</a></div>
+      <div class= "button"><a href= "http://localhost:3000/fixtures">Fixtures</a></div>
+      <div class= "button"><a href= "#">Results</a></div>
+      <div class= "button"><a href= "#">Newsletter</a></div>
+      <div class= "button"><a href= "#">Teams</a></div>
+      <div class= "button"><a href= "#">Photo's</a></div>
+      <div class= "button"><a href= "http://localhost:3000/login">Login</a></div>
+   </div>
+      <%= image_tag("logo.jpg", :alt => "St Michaels GFC", :class => "round")%>
+    </header>
+  
+    	<div id= "left_box">
+  <h1> Sponsors 
+  <br><br>
+  <%= image_tag("logo_mace.jpg", :alt => "Mace", :class => "round")%>
+  <%= image_tag("logo_painter.jpg", :alt => "Painter", :class => "round")%>
+  <%= image_tag("logo_tiler.jpg", :alt => "Tiler", :class => "round")%>
+  <%= image_tag("logo_builder.jpg", :alt => "Builder", :class => "round")%>
+  <%= image_tag("logo_lynches.jpg", :alt => "lynches", :class => "round")%></h1>
+  </div>
+    <%= yield %>
+    </div>
+    <br><br>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Age_Category: MyString
+  Time: 2013-04-23 11:16:06
+  Date: 2013-04-23
+  Location: MyString
+  Opponent: MyString
+
+two:
+  Age_Category: MyString
+  Time: 2013-04-23 11:16:06
+  Date: 2013-04-23
+  Location: MyString
+  Opponent: MyString

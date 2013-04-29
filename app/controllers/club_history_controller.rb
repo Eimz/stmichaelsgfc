@@ -1,0 +1,2 @@
+class ClubHistoryController < ApplicationController
+end

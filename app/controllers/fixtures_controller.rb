@@ -1,0 +1,3 @@
+class FixturesController < ApplicationController
+
+end
