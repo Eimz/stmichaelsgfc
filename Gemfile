@@ -12,10 +12,6 @@ gem 'social-share-button'
 gem 'heroku'
 gem 'pg'
 
-group :development, :test do
-    gem 'sqlite3'
-end
-
 group :production do
         gem 'thin'
     gem 'pg'
