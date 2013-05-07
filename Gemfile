@@ -10,6 +10,16 @@ gem 'paperclip'
 gem 'bcrypt-ruby' , :require => 'bcrypt'
 gem 'social-share-button'
 gem 'heroku'
+gem 'pg'
+
+group :development, :test do
+    gem 'sqlite3'
+end
+
+group :production do
+        gem 'thin'
+    gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
