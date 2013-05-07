@@ -1,0 +1,35 @@
+<div id= "right_box">
+<h1>Listing pitch_bookings</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Reason</th>
+    <th>Date</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pitch_bookings.each do |pitch_booking| %>
+  <tr>
+    <td><%= pitch_booking.name %></td>
+    <td><%= pitch_booking.reason %></td>
+    <td><%= pitch_booking.date %></td>
+    <td><%= pitch_booking.phone %></td>
+    <td><%= pitch_booking.email %></td>
+    <td><%= link_to 'Show', pitch_booking %></td>
+    <td><%= link_to 'Edit', edit_pitch_booking_path(pitch_booking) %></td>
+    <td><%= link_to 'Destroy', pitch_booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pitch booking', new_pitch_booking_path %>
+<br><br>
+</div>
+<br><br>

@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130423101606) do
+ActiveRecord::Schema.define(:version => 20130506123341) do
+
+  create_table "bookings", :force => true do |t|
+    t.string   "name"
+    t.string   "reason"
+    t.string   "text"
+    t.date     "date"
+    t.integer  "phone"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "events", :force => true do |t|
     t.string   "Age_Category"
@@ -21,6 +32,39 @@ ActiveRecord::Schema.define(:version => 20130423101606) do
     t.string   "Opponent"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "photos", :force => true do |t|
+    t.string   "caption"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_fie_size"
+    t.datetime "image_updated_at"
+  end
+
+  create_table "pitch_bookings", :force => true do |t|
+    t.string   "name"
+    t.text     "reason"
+    t.date     "date"
+    t.integer  "phone"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "stmichaelsgfcs", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end

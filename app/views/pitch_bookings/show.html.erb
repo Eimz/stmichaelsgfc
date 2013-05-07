@@ -1,0 +1,34 @@
+<div id= "right_box">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pitch_booking.name %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @pitch_booking.reason %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @pitch_booking.date %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @pitch_booking.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @pitch_booking.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_pitch_booking_path(@pitch_booking) %> |
+<%= link_to 'Back', pitch_bookings_path %>
+<br><br>
+</div>
+<br><br>

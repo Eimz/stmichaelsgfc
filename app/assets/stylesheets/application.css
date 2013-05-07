@@ -1,6 +1,7 @@
 html, body
 {
 	height: 100%;
+	
 }
 
 body
@@ -20,7 +21,7 @@ body
 	-moz-border-radius:2em;
 	border-radius:2em;
 	position: relative;
-	background: #FFFFEE;
+	background: #FF0000;
 }
 	
 .navbar {
@@ -59,9 +60,8 @@ body
 	border-radius:2em;
 }
 #left_box {
-	font-weight: bold;
 	width: 200px;
-	background: #FF0000;
+	background-image:url("squairy_light.png");
 	-webkit-border-radius:2em; /* Safari */
 	-moz-border-radius:2em;
 	border-radius:2em;
@@ -71,15 +71,15 @@ body
 }
 
 #left_box h1  {
+	font-weight: bold;
 	font-size: 25px;
 	color: #000000;	
 	text-align: center;
 	
 }
 #right_box {
-	font-weight: bold;
 	width: 700px;
-	background: #CCCCFF;
+	background-image:url("squairy_light.png");
 	-webkit-border-radius:1em; /* Safari */
 	-moz-border-radius:1em;
 	border-radius:1em;
@@ -87,15 +87,27 @@ body
 	left: 270px;	
 }
 #right_box h1  {
-	font-size: 25px;
-	color: #000000
-;	
-	text-align: center;
-
-
-#right_box p {
-	font-size: 18px;
+	font-weight: bold;
+	font-size: 30px;
 	color: #000000;	
 	text-align: center;
+	line-height: 40px;
+	
+	
 }
+
+#right_box h2 {
+	font-size: 15px;
+	color: #000000;	
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:50px;
+	margin-left:50px;
+}
+#user_nav {
+	text-align: right;
+	font-family: verdana;
+	font-weight: bold;
+}
+
 
