@@ -13,8 +13,11 @@ gem 'heroku'
 gem 'pg'
 
 group :production do
-        gem 'thin'
     gem 'pg'
+end
+
+group :development, :test do
+    gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
