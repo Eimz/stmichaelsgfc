@@ -1,0 +1,24 @@
+<div id= "right_box">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @players_profile.name %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @players_profile.date_of_birth %>
+</p>
+
+<p>
+  <b>Age category:</b>
+  <%= @players_profile.age_category %>
+</p>
+
+
+<%= link_to 'Edit', edit_players_profile_path(@players_profile) %> |
+<%= link_to 'Back', players_profiles_path %>
+<br><br>
+</div>
+<br><br>

@@ -1,0 +1,20 @@
+<div id= "right_box">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @sign_up_newsletter.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @sign_up_newsletter.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_sign_up_newsletter_path(@sign_up_newsletter) %>|
+<%= link_to 'New Sign Up', new_sign_up_newsletter_path %>
+
+<br><br>
+</div>
+<br><br>
