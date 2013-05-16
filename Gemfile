@@ -9,7 +9,7 @@ gem 'rails', '3.2.13'
 gem 'paperclip'
 gem 'bcrypt-ruby' , :require => 'bcrypt'
 gem 'social-share-button'
-gem 'heroku'
+
 
 gem 'sqlite3', :group => [:development, :test]
 group :production do

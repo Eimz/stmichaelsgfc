@@ -42,14 +42,6 @@ GEM
     excon (0.20.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    heroku (2.39.2)
-      heroku-api (~> 0.3.7)
-      launchy (>= 0.3.2)
-      netrc (~> 0.7.7)
-      rest-client (~> 1.6.1)
-      rubyzip
-    heroku-api (0.3.9)
-      excon (~> 0.20.1)
     hike (1.2.2)
     i18n (0.6.1)
     journey (1.0.4)
@@ -133,7 +125,6 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby
-  heroku
   jquery-rails
   paperclip
   pg
