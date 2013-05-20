@@ -12,10 +12,16 @@ gem 'bcrypt-ruby' , :require => 'bcrypt'
 gem 'social-share-button'
 
 
-gem 'sqlite3', :group => [:development, :test]
-group :production do
-  gem "pg"
+group :development, :test do
+  gem 'sqlite3'
 end
+
+group :production do
+  gem 'pg'
+end
+
+gem 'thin'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
