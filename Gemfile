@@ -27,10 +27,8 @@ gem 'thin'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
- 
- group :assets do
   gem 'coffee-rails'
-end
+
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -54,3 +52,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'closure-compiler'

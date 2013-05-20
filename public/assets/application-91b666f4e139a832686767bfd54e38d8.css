@@ -1,0 +1,118 @@
+html, body
+{
+	height: 100%;
+	
+}
+
+body
+{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 0px;
+	background-image:url("bg_image.png");
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 12pt;	
+}
+.container
+{
+	width: 1000px;
+	margin: 0px auto;
+	-webkit-border-radius:2em; /* Safari */
+	-moz-border-radius:2em;
+	border-radius:2em;
+	position: relative;
+	background: #FF0000;
+}
+	
+.navbar {
+	width: 1000px;
+	height: 50px;
+	font-family: verdana;
+	font-size: 15px;
+	line-height: 48px;
+	font-weight: bold;
+	border-top-right-radius:2em;
+	-webkit-border-top-right-radius:2em;
+	-moz-border-top-right-radius:2em;
+	border-top-left-radius:2em;
+	-webkit-border-top-left-radius:2em;
+	-moz-border-top-left-radius:2em;
+	background: #FF0000;
+}
+.button a{
+	float: left;
+	width: 125px;
+	height: 50px;
+	color: #000;
+	text-decoration: none;
+	text-align: center;	
+}
+.button a:hover{
+	float: left;
+	width: 125px;
+	height: 50px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;	
+	background: #000;
+	-webkit-border-radius:2em; /* Safari */
+	-moz-border-radius:2em;
+	border-radius:2em;
+}
+#left_box {
+	width: 200px;
+	position: absolute;
+	left: 30px;
+	top: 340px;
+}
+
+#left_box h1  {
+	font-weight: bold;
+	font-size: 13px;
+	color: #000000;	
+	text-align: center;
+	
+}
+#left_box h2  {
+	font-weight: bold;
+	font-size: 13px;
+	color: #000000;	
+	text-align: center;
+	
+}
+#right_box {
+	width: 700px;
+	background-image:url("squairy_light.png");
+	-webkit-border-radius:1em; /* Safari */
+	-moz-border-radius:1em;
+	border-radius:1em;
+	position: relative;
+	left: 270px;	
+}
+#right_box h1  {
+	font-weight: bold;
+	font-size: 30px;
+	color: #000000;	
+	text-align: center;
+	line-height: 40px;
+
+}
+
+#right_box h2 {
+	font-size: 15px;
+	color: #000000;	
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:50px;
+	margin-left:50px;
+}
+#user_nav {
+	font-family: verdana;
+	font-weight: bold;
+	margin-left: 190px;
+	color: #F0FFFF;
+}
+
+
+.slideshow1 { height: 55px; width: 200px;  }
+.slideshow1 img { padding: 15px; border: 3px solid #ccc; background-color: #eee; }
