@@ -1,0 +1,30 @@
+<div id= "right_box">
+<h1> Newsletter</h1>
+
+<table>
+<% @newsletter_st_micahels_gfcs.each do |newsletter_st_micahels_gfc| %>
+  <tr>
+    <th>Title</th>
+    <td><%= newsletter_st_micahels_gfc.title %></td>
+   
+  </tr>
+
+  <tr>
+    <th>Content</th>
+    <td><%= newsletter_st_micahels_gfc.content %></td>
+ </tr>
+
+   <tr>
+     <th>Date</th>
+    <td><%= newsletter_st_micahels_gfc.date %></td>
+ </tr>
+<% end %>
+</table>
+
+<br />
+
+
+
+<br><br>
+</div>
+<br><br>

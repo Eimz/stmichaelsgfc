@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130506123341) do
+ActiveRecord::Schema.define(:version => 20130514104106) do
 
   create_table "bookings", :force => true do |t|
     t.string   "name"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(:version => 20130506123341) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "newsletter_st_micahels_gfcs", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "date"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "photos", :force => true do |t|
     t.string   "caption"
     t.datetime "created_at",         :null => false
@@ -49,6 +57,21 @@ ActiveRecord::Schema.define(:version => 20130506123341) do
     t.text     "reason"
     t.date     "date"
     t.integer  "phone"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "players_profiles", :force => true do |t|
+    t.string   "name"
+    t.string   "date_of_birth"
+    t.string   "age_category"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "sign_up_newsletters", :force => true do |t|
+    t.string   "name"
     t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

@@ -1,27 +1,29 @@
 <div id= "right_box">
-<h1>Listing photos</h1>
+<h1>Upload you Photos from Games/Events for St.Michaels GFC</h1>
 
 <table>
+<%= link_to ' Upload Photo', new_photo_path %>
   <tr>
     <th>Caption</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Image</th>
+
   </tr>
 
 <% @photos.each do |photo| %>
+
+
+
   <tr>
     <td><%= photo.caption %></td>
+    <td> <%= image_tag photo.image.url %></td>
     <td><%= link_to 'Show', photo %></td>
-    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-    <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
   </tr>
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Photo', new_photo_path %>
+
 <br><br>
 </div>
 <br><br>

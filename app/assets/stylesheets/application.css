@@ -61,18 +61,21 @@ body
 }
 #left_box {
 	width: 200px;
-	background-image:url("squairy_light.png");
-	-webkit-border-radius:2em; /* Safari */
-	-moz-border-radius:2em;
-	border-radius:2em;
 	position: absolute;
 	left: 30px;
-	top: 342px;
+	top: 340px;
 }
 
 #left_box h1  {
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 13px;
+	color: #000000;	
+	text-align: center;
+	
+}
+#left_box h2  {
+	font-weight: bold;
+	font-size: 13px;
 	color: #000000;	
 	text-align: center;
 	
@@ -92,8 +95,7 @@ body
 	color: #000000;	
 	text-align: center;
 	line-height: 40px;
-	
-	
+
 }
 
 #right_box h2 {
@@ -105,9 +107,12 @@ body
 	margin-left:50px;
 }
 #user_nav {
-	text-align: right;
 	font-family: verdana;
 	font-weight: bold;
+	margin-left: 190px;
+	color: #F0FFFF;
 }
 
 
+.slideshow1 { height: 55px; width: 200px;  }
+.slideshow1 img { padding: 15px; border: 3px solid #ccc; background-color: #eee; }

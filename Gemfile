@@ -9,12 +9,11 @@ gem 'rails', '3.2.13'
 gem 'paperclip'
 gem 'bcrypt-ruby' , :require => 'bcrypt'
 gem 'social-share-button'
-gem 'heroku'
+
 
 gem 'sqlite3', :group => [:development, :test]
 group :production do
-  gem 'thin'
-  gem 'pg'
+  gem "mysql", "~> 2.9.1"
 end
 
 # Gems used only for assets and not required

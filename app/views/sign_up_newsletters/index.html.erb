@@ -1,0 +1,29 @@
+<div id= "right_box">
+<h1>List of Signed Up</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sign_up_newsletters.each do |sign_up_newsletter| %>
+  <tr>
+    <td><%= sign_up_newsletter.name %></td>
+    <td><%= sign_up_newsletter.email %></td>
+    <td><%= link_to 'Show', sign_up_newsletter %></td>
+    <td><%= link_to 'Edit', edit_sign_up_newsletter_path(sign_up_newsletter) %></td>
+    <td><%= link_to 'Destroy', sign_up_newsletter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sign up newsletter', new_sign_up_newsletter_path %>
+<br><br>
+</div>
+<br><br>

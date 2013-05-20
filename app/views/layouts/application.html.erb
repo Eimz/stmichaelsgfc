@@ -14,15 +14,10 @@
   <% if current_user %>
     Logged in as <%= current_user.email %>.
     <%= link_to "Log out", log_out_path %>
-  <% else %>
-    <%= link_to "Sign up", sign_up_path %> or
-    <%= link_to "Log in", log_in_path %>
+
   <% end %>
 
 
-<% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, :id => "flash_#{name}" %>
-<% end %>
 </div>
   <div class= "container">
     <header>
@@ -30,31 +25,61 @@
       <div class= "button"><a href= "http://localhost:3000/stmichaelsgfc">News</a></div>
       <div class= "button"><a href= "http://localhost:3000/club_history">Club History</a></div>
       <div class= "button"><a href= "http://localhost:3000/fixtures">Fixtures</a></div>
-      <div class= "button"><a href= "#">Results</a></div>
-      <div class= "button"><a href= "#">Newsletter</a></div>
-      <div class= "button"><a href= "#">Teams</a></div>
+      <div class= "button"><a href= "http://localhost:3000/newsletter_st_micahels_gfcs">Newsletter</a></div>
+      <div class= "button"><a href= "players_profiles">Teams</a></div>
       <div class= "button"><a href= "http://localhost:3000/photos">Photo's</a></div>
-      <div class= "button"><a href= "#">?????</a></div>
+      <div class= "button"><a href= "http://localhost:3000/pitch_bookings/new">Bookings</a></div>
+         <div class= "button"><a href= "http://localhost:3000/log_in">Log In
+         
+         </a></div>
    </div>
       <%= image_tag("logo.jpg", :alt => "St Michaels GFC", :class => "round")%>
     </header>
 
-    	<div id= "left_box">
-  <h1> Sponsors 
-  <br><br>
-  <%= image_tag("logo_mace.jpg", :alt => "Mace", :class => "round")%>
-  <%= image_tag("logo_painter.jpg", :alt => "Painter", :class => "round")%>
-  <%= image_tag("logo_tiler.jpg", :alt => "Tiler", :class => "round")%>
-  <%= image_tag("logo_builder.jpg", :alt => "Builder", :class => "round")%>
-  <%= image_tag("logo_lynches.jpg", :alt => "lynches", :class => "round")%></h1>
-  </div>
-    <%= yield %>
-    </div>
-    <br><br>
-    
+    	<div id= "left_box"> <h1> 
 
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.slideshow1').cycle({
+    fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, fade looks best
+  });
+});
+</script>
 
  
+
+
+  <div class="slideshow1">
+  <%= image_tag("logo_mace.jpg", :alt => "Mace")%>
+  <%= image_tag("logo_painter.jpg", :alt => "Painter")%>
+  <%= image_tag("logo_lynches.jpg", :alt => "lynches")%></h1>
+  <br><br><br><br><br>
+  <h2>stmichaelsgfc2013@gmail.com
+  <br><br>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="https://www.facebook.com/stmichaels.gfc?hc_location=stream" data-send="false" data-layout="button_count" data-width="500" data-show-faces="true" data-font="verdana"></div>
+ <br><br> <a href= "http://localhost:3000/sign_up_newsletters/new">Receive a Monthly Newsletter</a>
+  </h2>
+  </div>
+
+  
+    
+    
+    <%= yield %>
+    </div>
+    <br><br><br>
  <br><br>
 </body>
 </html>

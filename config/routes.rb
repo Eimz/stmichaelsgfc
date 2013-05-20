@@ -1,24 +1,36 @@
 StMichaelsGFC::Application.routes.draw do
-  
-  resources :pitch_bookings
+ 
+  resources :players_profiles
 
 
-  resources :bookings
+  resources :teams
+
+
+  resources :sign_up_newsletters
+
+
+  resources :newsletter_st_micahels_gfcs
+
+
+  resources :newsletters
 
 
   get "sign_up" => "users#new", :as => "sign_up"
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"
-  root :to => "events#index"
+  root :to => "admin#index"
   
   resources :users
   resources :sessions
   resources :photos
   resources :events
+  resources :pitch_bookings 
   
    match "stmichaelsgfc" => "stmichaelsgfc#index"
    match "club_history" => "club_history#index" 
    match "fixtures" => "events#index"
+   match "admin" => "admin#index"
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

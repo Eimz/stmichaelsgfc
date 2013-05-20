@@ -1,0 +1,29 @@
+<%= form_for(@sign_up_newsletter) do |f| %>
+  <% if @sign_up_newsletter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sign_up_newsletter.errors.count, "error") %> prohibited this sign_up_newsletter from being saved:</h2>
+
+      <ul>
+      <% @sign_up_newsletter.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+      <br><br>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+    <br><br>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+    <br><br>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+    <br><br>
+  </div>
+<% end %>
