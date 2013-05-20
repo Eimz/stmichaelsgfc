@@ -26,11 +26,11 @@ StMichaelsGFC::Application.routes.draw do
   resources :events
   resources :pitch_bookings 
   
-   match "stmichaelsgfc" => "stmichaelsgfc#index"
+   
    match "club_history" => "club_history#index" 
    match "fixtures" => "events#index"
    match "admin" => "admin#index"
-
+    match "stmichaelsgfc" => "stmichaelsgfc#index"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
