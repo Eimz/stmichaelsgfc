@@ -14,7 +14,7 @@ gem 'social-share-button'
 
 gem 'sqlite3', :group => [:development, :test]
 group :production do
-  gem "mysql", "~> 2.9.1"
+  gem "pg"
 end
 
 # Gems used only for assets and not required
