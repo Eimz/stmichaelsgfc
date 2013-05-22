@@ -1,32 +1,21 @@
 StMichaelsGFC::Application.routes.draw do
  
   resources :players_profiles
-
-
   resources :teams
-
-
   resources :sign_up_newsletters
-
-
   resources :newsletter_st_micahels_gfcs
-
-
   resources :newsletters
-
-
-  get "sign_up" => "users#new", :as => "sign_up"
-  get "log_out" => "sessions#destroy", :as => "log_out"
-  get "log_in" => "sessions#new", :as => "log_in"
-  root :to => "admin#index"
-  
   resources :users
   resources :sessions
   resources :photos
   resources :events
   resources :pitch_bookings 
-  
-   
+
+  get "sign_up" => "users#new", :as => "sign_up"
+  get "log_out" => "sessions#destroy", :as => "log_out"
+  get "log_in" => "sessions#new", :as => "log_in"
+  root :to => "admin#index"
+ 
    match "club_history" => "club_history#index" 
    match "fixtures" => "events#index"
    match "admin" => "admin#index"

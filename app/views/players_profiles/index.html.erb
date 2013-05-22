@@ -6,16 +6,17 @@
     <th>Name</th>
     <th>D.O.B</th>
     <th>Age category</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Picture</th>
   </tr>
 
 <% @players_profiles.each do |players_profile| %>
+
+
   <tr>
     <td><%= players_profile.name %></td>
     <td><%= players_profile.date_of_birth %></td>
     <td><%= players_profile.age_category %></td>
+    <td><%= image_tag players_profile.pic.url %></td>
     <td><%= link_to 'Show', players_profile %></td>
 </td>
   </tr>

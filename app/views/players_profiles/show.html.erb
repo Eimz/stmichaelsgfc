@@ -16,6 +16,10 @@
   <%= @players_profile.age_category %>
 </p>
 
+<p>
+  <b>Image:</b>
+  <%= image_tag @players_profile.pic.url %>
+</p>
 
 <%= link_to 'Edit', edit_players_profile_path(@players_profile) %> |
 <%= link_to 'Back', players_profiles_path %>
